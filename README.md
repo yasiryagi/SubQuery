@@ -77,8 +77,8 @@ Click on the detail button to get your details to be used in the Prometheus conf
 
 
 > [Node Exporter Dashboard] (https://grafana.com/grafana/dashboards/1860)
-![Stuck page](./monitor/images/2_1.png)
-![Stuck page](./monitor/images/2_2.png)
+![Stuck page](./monitoring/images/2_1.png)
+![Stuck page](./monitoring/images/2_2.png)
 
 
 ## Ref

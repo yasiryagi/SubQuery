@@ -76,6 +76,7 @@ Click on the detail button to get your details to be used in the Prometheus conf
 ###Get and install dashboard templates 
 
 
+Import the dashboard from [here](./monitoring/node-exporter-full_rev27.json)
 [Node Exporter Dashboard](https://grafana.com/grafana/dashboards/1860)
 ![Stuck page](./monitoring/images/2_1.PNG)
 ![Stuck page](./monitoring/images/2_2.PNG)

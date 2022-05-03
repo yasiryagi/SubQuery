@@ -4,33 +4,33 @@
 ### Auto add network to Metamask did not kick in 
 The page got stuck at Connect wallet to use Indesxer App
 
-![Stuck page](./images/1.png)
+![Stuck page](./images/1.PNG)
 
 ### Start index project window detail should be displayed in the frontier/project 
 - Indexing Network Endpoint
 - Network Dictionary Endpoint 
-![Stuck page](./images/4.png)
-![Stuck page](./images/5.png)
+![Stuck page](./images/4.PNG)
+![Stuck page](./images/5.PNG)
 
 ## frontier UI
 ### Indexer page displaying empty 
-![Stuck page](./images/2.png)
+![Stuck page](./images/2.PNG)
 
 ### UI not clean
 
 
 ####Plan UI 
-![Stuck page](./images/3.png)
+![Stuck page](./images/3.PNG)
 
 
 #### Purchase a Plan
 
-![Stuck page](./images/6.png)
+![Stuck page](./images/6.PNG)
 
 
 #### Change commission
 
-![Stuck page](./images/7.png)
+![Stuck page](./images/7.PNG)
 
 # Error 
 

@@ -1,11 +1,11 @@
 
 #Delegate 
 
-![Stuck page](./images/1.png)
-![Stuck page](./images/2.png)
+![Stuck page](./images/1.PNG)
+![Stuck page](./images/2.PNG)
 
 #Purchase service agreement
 
-![Stuck page](./images/3.png)
-![Stuck page](./images/4.png)
-![Stuck page](./images/5.png)
+![Stuck page](./images/3.PNG)
+![Stuck page](./images/4.PNG)
+![Stuck page](./images/5.PNG)

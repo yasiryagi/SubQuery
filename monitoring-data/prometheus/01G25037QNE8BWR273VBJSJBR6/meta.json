@@ -1,0 +1,17 @@
+{
+	"ulid": "01G25037QNE8BWR273VBJSJBR6",
+	"minTime": 1651572000488,
+	"maxTime": 1651579200000,
+	"stats": {
+		"numSamples": 1300121,
+		"numSeries": 1660,
+		"numChunks": 10819
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01G25037QNE8BWR273VBJSJBR6"
+		]
+	},
+	"version": 1
+}

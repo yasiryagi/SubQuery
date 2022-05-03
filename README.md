@@ -71,7 +71,7 @@ We will be using cloud grafana.
 
 Click on the detail button to get your details to be used in the Prometheus config
 
-![Stuck page](./monitor/images/1.PNG)
+![Stuck page](./monitoring/images/1.PNG)
 
 ###Get and install dashboard templates 
 

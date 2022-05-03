@@ -66,17 +66,17 @@ docker-compose logs -f --tail 100
 ## Grafana 
 
 We will be using cloud grafana.
-> [create an account] (https://grafana.com/)
+> [create an account](https://grafana.com/)
 
 
 Click on the detail button to get your details to be used in the Prometheus config
 
-![Stuck page](./monitor/images/1.png)
+![Stuck page](./monitor/images/1.PNG)
 
 ###Get and install dashboard templates 
 
 
-[Node Exporter Dashboard] (https://grafana.com/grafana/dashboards/1860)
+[Node Exporter Dashboard](https://grafana.com/grafana/dashboards/1860)
 ![Stuck page](./monitoring/images/2_1.PNG)
 ![Stuck page](./monitoring/images/2_2.PNG)
 

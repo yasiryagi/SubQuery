@@ -70,7 +70,7 @@ cd SubQuery/
 
 ```
 docker-compose pull
-docker-compose stop proxy-server service1 service2 
+docker-compose down proxy-server service1 service2 
 docker-compose build proxy-server service1 service2
 docker-compose up -d proxy-server service1 service2
 ```
@@ -78,7 +78,7 @@ docker-compose up -d proxy-server service1 service2
 Example
 ``` 
 docker-compose pull
-docker-compose stop proxy-server coordinator-service
+docker-compose down proxy-server coordinator-service
 docker-compose build proxy-server coordinator-service
 docker-compose up -d proxy-server coordinator-service
 ```

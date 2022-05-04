@@ -66,9 +66,10 @@ docker-compose logs -f --tail 100
 ## Upgrade 
 
 ## Upgrade SubQuery
-cd SubQuery/
 
 ```
+cd SubQuery/
+curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
 docker-compose pull
 docker-compose down proxy-server service1 service2 
 docker-compose build proxy-server service1 service2

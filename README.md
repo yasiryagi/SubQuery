@@ -63,28 +63,6 @@ docker ps
 docker-compose logs -f --tail 100
 ```
 
-## Upgrade 
-
-## Upgrade SubQuery
-
-```
-cd SubQuery/
-docker-compose down proxy-server service1 service2
-curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
-docker-compose pull 
-docker-compose build proxy-server service1 service2
-docker-compose up -d proxy-server service1 service2
-```
-
-Example
-``` 
-docker-compose down proxy-server coordinator-service
-curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
-docker-compose pull
-docker-compose build proxy-server coordinator-service
-docker-compose up -d proxy-server coordinator-service
-```
-
 ## Grafana 
 
 We will be using cloud grafana.
@@ -108,4 +86,24 @@ Import the dashboard from [here](./monitoring/node-exporter-full_rev27.json) or 
 > https://grafana.com/docs/grafana-cloud/quickstart/docker-compose-linux/
 
 
+# Upgrade
+
+## Upgrade SubQuery
+
+```
+cd SubQuery/
+docker-compose down proxy-server service1 service2
+curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
+docker-compose pull
+docker-compose build proxy-server service1 service2
+docker-compose up -d proxy-server service1 service2
+```
+
+Example
+```
+docker-compose down proxy-server coordinator-service
+curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
+docker-compose pull
+docker-compose build proxy-server coordinator-service
+docker-compose up -d proxy-server coordinator-service
 

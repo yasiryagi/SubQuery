@@ -1,9 +1,9 @@
-# Subquery Docker
+# SubQuery Docker
 
 ## Requirements 
-
+```
 apt install -y vim htop ca-certificates curl gnupg lsb-release
- 
+``` 
 
 ## Install docker
 

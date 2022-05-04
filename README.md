@@ -40,6 +40,8 @@ ufw enable
 
 
 ```
+get clone https://github.com/yasiryagi/SubQuery.git
+curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
 cp service/subquery.service /etc/systemd/system/subquery.service
 systemctl start subquery.service
 systemctl status subquery.service

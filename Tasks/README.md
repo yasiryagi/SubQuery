@@ -35,6 +35,6 @@
 ![Stuck page](./images/6.PNG)
 
 
-# At the end of season 2 (we’ll send more details), provide useful feedback and node metrics to the SubQuery Team via GitHub Discussions (200 points)
+# At the end of season 2, provide useful feedback and node metrics to the SubQuery Team via GitHub Discussions (200 points)
 
 ![Stuck page](./images/7.PNG)

@@ -14,6 +14,13 @@ The page got stuck at Connect wallet to use Indesxer App
 ![Stuck page](./images/4.PNG)
 ![Stuck page](./images/5.PNG)
 
+
+### Indexing status
+The indexing status displayed as below even after refreshing the page.
+![Stuck page](./images/13.PNG)
+But after browsing into the project and back, it display the below
+![Stuck page](./images/14.PNG)
+
 ## frontier UI
 ### Indexer page displaying empty 
 

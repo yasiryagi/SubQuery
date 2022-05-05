@@ -41,6 +41,7 @@ ufw enable
 
 ```
 get clone https://github.com/yasiryagi/SubQuery.git
+cd SubQuery
 curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
 cp service/subquery.service /etc/systemd/system/subquery.service
 systemctl start subquery.service
@@ -76,6 +77,7 @@ docker-compose up -d proxy-server coordinator-service
 # Monitoring 
 
 ```
+cd SubQuery
 cp service/monitor_subquery.service /etc/systemd/system/monitor_subquery.service
 systemctl start monitor_subquery.service
 systemctl status monitor_subquery.service

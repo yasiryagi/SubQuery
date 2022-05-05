@@ -16,7 +16,7 @@ The page got stuck at Connect wallet to use Indesxer App
 
 
 ### Indexing status
-> [Reported issue 966](https://github.com/subquery/subql/discussions/976)
+> [Reported issue 976](https://github.com/subquery/subql/discussions/976)
 
 The indexing status displayed as below even after refreshing the page.
 ![Stuck page](./images/13.PNG)

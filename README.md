@@ -77,7 +77,7 @@ docker-compose up -d proxy-server coordinator-service
 # Monitoring 
 Edit monitoring/prometheus.yml
 > rremote_write:
->   - url: "**<Remote Write Endpoint>**"
+>   \- url: "**<Remote Write Endpoint>**"
 >    basic_auth:
 >       username: "**<Username / Instance ID>**"
 >       password: "**<Password / API Key>**"

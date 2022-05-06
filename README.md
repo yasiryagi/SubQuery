@@ -75,6 +75,10 @@ docker-compose up -d proxy-server coordinator-service
 
 
 # Monitoring 
+Edit monitoring/prometheus.yml
+
+>      username: "**<Username / Instance ID>**"
+>      password: "**<Password / API Key>**"
 
 ```
 cd SubQuery

@@ -41,7 +41,7 @@ ufw enable
 
 
 ```
-get clone https://github.com/yasiryagi/SubQuery.git
+git clone https://github.com/yasiryagi/SubQuery.git
 curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
 cp service/subquery.service /etc/systemd/system/subquery.service
 systemctl start subquery.service
@@ -94,7 +94,7 @@ We will be using cloud grafana.
 
 Click on the detail button to get your details to be used in the Prometheus config
 
-![Stuck page](./monitoring/images/1.PNG)
+![grafana](./monitoring/images/1.PNG)
 
 ### Get and install dashboard templates 
 

@@ -62,6 +62,7 @@ cp service/monitor_subquery.service /etc/systemd/system/monitor_subquery.service
 systemctl start monitor_subquery.service
 systemctl status monitor_subquery.service
 docker ps
+cd monitoring
 docker-compose logs -f --tail 100
 ```
 
@@ -80,6 +81,7 @@ docker-compose up -d proxy-server service1 service2
 
 Example
 ``` 
+cd SubQuery/
 docker-compose down proxy-server coordinator-service
 curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
 docker-compose pull

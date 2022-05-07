@@ -40,7 +40,7 @@
 ![Task](./images/7.PNG)
 
 # Delegator operations
-## Redelegate tokens between accounts (added 6th May)
+## Redelegate tokens between accounts
 
 
 ![Task](./images/8.PNG)

@@ -59,8 +59,8 @@ services:
       - "--web.console.libraries=/etc/prometheus/console_libraries"
       - "--web.console.templates=/etc/prometheus/consoles"
     volumes:
-        - $HOME/subquery-indexer/monitoring-data/prometheus:/prometheus
-        - $HOME/subquery-indexer/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+        - $HOME/SubQuery/monitoring-data/prometheus:/prometheus
+        - $HOME/SubQuery/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
     labels:

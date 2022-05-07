@@ -31,6 +31,7 @@ cp firewall/after.rules /etc/ufw/after.rules
 ufw allow ssh
 ufw route allow proto tcp from any to any port 80
 ufw route allow proto tcp from **your IP** to any port 8000
+ufw route allow proto tcp from any to any port 9090
 ufw route allow proto tcp from any to any port 3001
 ufw route allow proto tcp from any to any port 3002
 ufw enable 

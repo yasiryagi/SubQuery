@@ -1,9 +1,9 @@
-# SubQuery Docker
+# Subquery Docker
 
 ## Requirements 
-```
+
 apt install -y vim htop ca-certificates curl gnupg lsb-release
-``` 
+ 
 
 ## Install docker
 
@@ -41,7 +41,6 @@ ufw enable
 
 ```
 get clone https://github.com/yasiryagi/SubQuery.git
-cd SubQuery
 curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
 cp service/subquery.service /etc/systemd/system/subquery.service
 systemctl start subquery.service
@@ -50,47 +49,40 @@ docker ps
 docker-compose logs -f --tail 100
 ```
 
-## Upgrade
-
-```
-cd SubQuery/
-docker-compose down proxy-server service1 service2
-curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
-docker-compose pull
-docker-compose build proxy-server service1 service2
-docker-compose up -d proxy-server service1 service2
-```
-
-Example
-```
-docker-compose down proxy-server coordinator-service
-curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
-docker-compose pull
-docker-compose build proxy-server coordinator-service
-docker-compose up -d proxy-server coordinator-service
-```
-
 ## Ref
 > https://www.notion.so/subquery/Running-Indexer-Services-3a46ea8c0e0441529645216c16efd75f
 
 
 # Monitoring 
-Edit monitoring/prometheus.yml
-``` 
- remote_write:
-    - url: "**<Remote Write Endpoint>**"
-    basic_auth:
-       username: "**<Username / Instance ID>**"
-       password: "**<Password / API Key>**"
-```
 
 ```
-cd SubQuery
 cp service/monitor_subquery.service /etc/systemd/system/monitor_subquery.service
 systemctl start monitor_subquery.service
 systemctl status monitor_subquery.service
 docker ps
 docker-compose logs -f --tail 100
+```
+
+## Upgrade 
+
+## Upgrade SubQuery
+
+```
+cd SubQuery/
+docker-compose down proxy-server service1 service2
+curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
+docker-compose pull 
+docker-compose build proxy-server service1 service2
+docker-compose up -d proxy-server service1 service2
+```
+
+Example
+``` 
+docker-compose down proxy-server coordinator-service
+curl https://raw.githubusercontent.com/subquery/indexer-services/main/docker-compose.yml -o docker-compose.yml
+docker-compose pull
+docker-compose build proxy-server coordinator-service
+docker-compose up -d proxy-server coordinator-service
 ```
 
 ## Grafana 
@@ -106,11 +98,16 @@ Click on the detail button to get your details to be used in the Prometheus conf
 ### Get and install dashboard templates 
 
 
-Import the dashboard from [here](./monitoring/node-exporter-full_rev27.json) or download it from [Node Exporter Dashboard](https://grafana.com/grafana/dashboards/1860)
-![Stuck page](./monitoring/images/2_1.PNG)
-![Stuck page](./monitoring/images/2_2.PNG)
+Import the dashboards from [here](./monitoring/dashboard).
+![Docker host](./monitoring/images/2_1.PNG)
+![Docker Serivces](./monitoring/images/2_2.PNG)
+![Docker containers](./monitoring/images/2_3.PNG)
 
 
 ## Ref
 > https://grafana.com/orgs/**<username>**
 > https://grafana.com/docs/grafana-cloud/quickstart/docker-compose-linux/
+> https://github.com/stefanprodan/dockprom
+
+
+

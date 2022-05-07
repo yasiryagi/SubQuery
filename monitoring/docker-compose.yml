@@ -37,6 +37,19 @@ services:
       - 8080
     labels:
       org.label-schema.group: "monitoring"
+# alertmanager:
+#   image: prom/alertmanager:v0.24.0
+#   container_name: alertmanager
+#   volumes:
+#     - ./alertmanager:/etc/alertmanager
+#   command:
+#     - '--config.file=/etc/alertmanager/config.yml'
+#     - '--storage.path=/alertmanager'
+#   restart: unless-stopped
+#   expose:
+#     - 9093
+#   labels:
+#     org.label-schema.group: "monitoring"
   prometheus:
     image: prom/prometheus:latest
     command:

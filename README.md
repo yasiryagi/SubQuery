@@ -58,8 +58,9 @@ docker-compose logs -f --tail 100
 
 # Monitoring 
 
+> Edit monitoring/prometheus/prometheus.yml
 ```
-cp service/monitor_subquery.service /etc/systemd/system/monitor_subquery.service
+cp monitoring/service/monitoring.service /etc/systemd/system/monitor_subquery.service
 systemctl start monitor_subquery.service
 systemctl status monitor_subquery.service
 docker ps

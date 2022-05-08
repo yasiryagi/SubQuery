@@ -51,6 +51,8 @@ docker ps
 docker-compose logs -f --tail 100
 ```
 
+> Note: this guide created with the username root, if that is not the case review "WorkingDirectory=" in the service files.
+
 ## Ref
 > https://www.notion.so/subquery/Running-Indexer-Services-3a46ea8c0e0441529645216c16efd75f
 
@@ -65,6 +67,8 @@ docker ps
 cd monitoring
 docker-compose logs -f --tail 100
 ```
+
+> Note: this guide created with the username root, if that is not the case review "WorkingDirectory=" in the service files.
 
 ## Upgrade 
 
